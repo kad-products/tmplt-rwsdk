@@ -27,8 +27,6 @@
 		"prettier:check": "prettier --check .",
 		"prettier:fix": "prettier --write .",
 		"preview": "vite preview",
-		"release": "./scripts/semantic-release.sh",
-		"release:dry-run": "./scripts/semantic-release.sh --dry-run --no-ci",
 		"test": "vitest",
 		"test:run": "vitest run --coverage",
 		"test:ui": "vitest --ui",
@@ -47,6 +45,7 @@
 		"worker-configuration.d.ts": []
 	},
 	"dependencies": {
+		"@kad-products/shed": "link:../shed",
 		"classnames": "^2.5.1",
 		"react": "19.3.0",
 		"react-dom": "19.3.0",

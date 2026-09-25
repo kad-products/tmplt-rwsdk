@@ -191,6 +191,9 @@ importers:
 
   .:
     dependencies:
+      '@kad-products/shed':
+        specifier: link:../shed
+        version: link:../shed
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
