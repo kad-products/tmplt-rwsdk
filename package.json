@@ -1,6 +1,6 @@
 {
 	"name": "@kad-products/tmplt-rwsdk",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"private": true,
 	"description": "A github template repo for RedwoodSDK projects",
 	"keywords": [],
