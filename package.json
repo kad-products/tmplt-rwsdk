@@ -1,0 +1,79 @@
+{
+	"name": "@kad-products/tmplt-rwsdk",
+	"version": "0.0.1",
+	"private": true,
+	"description": "A github template repo for RedwoodSDK projects",
+	"keywords": [],
+	"license": "MIT",
+	"author": "",
+	"type": "module",
+	"main": "src/worker.tsx",
+	"scripts": {
+		"biome:check": "biome check",
+		"biome:fix": "biome check --write .",
+		"build": "vite build",
+		"check": "npm run generate && npm run types",
+		"ci:lint": "pnpm types:check && pnpm biome:check && pnpm knip:check && pnpm prettier:check",
+		"ci:tests": "pnpm test:run && pnpm build",
+		"clean": "npm run clean:vite",
+		"clean:vite": "rm -rf ./node_modules/.vite",
+		"deploy": "rw-scripts ensure-deploy-env && npm run clean && vite build --mode $CLOUDFLARE_ENV && wrangler deploy --env $CLOUDFLARE_ENV",
+		"dev": "vite dev --host",
+		"dev:init": "rw-scripts dev-init",
+		"generate": "rw-scripts ensure-env && wrangler types --include-runtime false && tsx scripts/fix-env-types.ts",
+		"knip:check": "knip",
+		"knip:fix": "knip --fix",
+		"prepare": "husky",
+		"prettier:check": "prettier --check .",
+		"prettier:fix": "prettier --write .",
+		"preview": "vite preview",
+		"release": "./scripts/semantic-release.sh",
+		"release:dry-run": "./scripts/semantic-release.sh --dry-run --no-ci",
+		"test": "vitest",
+		"test:run": "vitest run --coverage",
+		"test:ui": "vitest --ui",
+		"types:check": "tsc"
+	},
+	"lint-staged": {
+		"*": [
+			"biome check --write --no-errors-on-unmatched --files-ignore-unknown=true"
+		],
+		"package.json": [
+			"prettier --write"
+		],
+		"*.{css,less}": [
+			"prettier --write"
+		],
+		"worker-configuration.d.ts": []
+	},
+	"dependencies": {
+		"classnames": "^2.5.1",
+		"react": "19.3.0",
+		"react-dom": "19.3.0",
+		"rwsdk": "1.3.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.5",
+		"@cloudflare/vite-plugin": "1.25.1",
+		"@cloudflare/workers-types": "5.20260922.1",
+		"@commitlint/cli": "^20.4.1",
+		"@commitlint/config-conventional": "^20.4.1",
+		"@types/node": "~24.10.0",
+		"@types/react": "19.2.14",
+		"@types/react-dom": "19.2.3",
+		"@vitest/coverage-v8": "4.1.11",
+		"@vitest/ui": "4.1.11",
+		"husky": "^9.1.7",
+		"knip": "^6.32.2",
+		"less": "^4.5.1",
+		"lint-staged": "^16.4.0",
+		"prettier": "^3.8.1",
+		"prettier-plugin-packagejson": "^3.0.2",
+		"tsx": "^4.21.0",
+		"typescript": "5.9.3",
+		"vite": "7.3.1",
+		"vitest": "^4.1.11",
+		"wrangler": "4.114.0"
+	},
+	"packageManager": "pnpm@12.6.0"
+}

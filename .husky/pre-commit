@@ -1,0 +1,3 @@
+pnpm generate
+git add worker-configuration.d.ts  # Stage the generated file as-is
+pnpm exec lint-staged

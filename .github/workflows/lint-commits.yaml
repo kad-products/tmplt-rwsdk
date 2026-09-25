@@ -1,0 +1,13 @@
+name: Lint Commits
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-commits:
+    uses: kad-products/platform/.github/workflows/lint-commits.yaml@main
+    permissions:
+      contents: read
+      packages: read
+    secrets: inherit

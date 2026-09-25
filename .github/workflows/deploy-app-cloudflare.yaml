@@ -1,0 +1,19 @@
+name: Deploy App to Cloudflare
+
+on:
+  release:
+    types: 
+      - published
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    uses: kad-products/platform/.github/workflows/deploy-app-cloudflare.yaml@main
+    with:
+      tag: ${{ github.ref }}
+    permissions:
+      contents: write
+    secrets: inherit
