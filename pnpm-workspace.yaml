@@ -2,3 +2,5 @@ allowBuilds:
   esbuild: false
   sharp: false
   workerd: false
+minimumReleaseAgeExclude:
+  - '@kad-products/shed@1.0.0'

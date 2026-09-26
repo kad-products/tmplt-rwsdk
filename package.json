@@ -45,7 +45,7 @@
 		"worker-configuration.d.ts": []
 	},
 	"dependencies": {
-		"@kad-products/shed": "link:../shed",
+		"@kad-products/shed": "^1.0.0",
 		"classnames": "^2.5.1",
 		"react": "19.3.0",
 		"react-dom": "19.3.0",
