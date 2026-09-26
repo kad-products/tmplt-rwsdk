@@ -1,6 +1,5 @@
 export default {
 	tags: ['-lintignore', '-knipTestExport'],
-	ignoreDependencies: ['cloudflare'],
 	ignoreExportsUsedInFile: true,
 	entry: ['tests/mocks/**'],
 	ignoreFiles: ['src/client.tsx', 'release.config.js'],

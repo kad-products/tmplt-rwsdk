@@ -17,3 +17,5 @@ jobs:
     permissions:
       contents: write
     secrets: inherit
+    # disabled here in the template repo, remove in the real repo
+    if: false 
