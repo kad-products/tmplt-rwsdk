@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/kad-products/tmplt-rwsdk/compare/v1.1.0...v1.1.1) (2026-09-29)
+
+### Bug Fixes
+
+* import repo ([65c7ba5](https://github.com/kad-products/tmplt-rwsdk/commit/65c7ba51c88e9c18a8a90a45b20d72484099cfc9))
+
 ## [1.1.0](https://github.com/kad-products/tmplt-rwsdk/compare/v1.0.1...v1.1.0) (2026-09-29)
 
 ### Features
