@@ -3,3 +3,8 @@ variable "kad_workflow_automation" {
   type        = string
   sensitive   = true
 }
+
+variable "repo_name" {
+  description = "Repo name/slug from GitHub"
+  type = string
+}
