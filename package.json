@@ -27,22 +27,11 @@
 		"prettier:check": "prettier --check .",
 		"prettier:fix": "prettier --write .",
 		"preview": "vite preview",
+		"staged:lint": "lint-staged --allow-empty",
 		"test": "vitest",
 		"test:run": "vitest run --coverage",
 		"test:ui": "vitest --ui",
 		"types:check": "tsc"
-	},
-	"lint-staged": {
-		"*": [
-			"biome check --write --no-errors-on-unmatched --files-ignore-unknown=true"
-		],
-		"package.json": [
-			"prettier --write"
-		],
-		"*.{css,less}": [
-			"prettier --write"
-		],
-		"worker-configuration.d.ts": []
 	},
 	"dependencies": {
 		"@kad-products/shed": "^1.0.0",
