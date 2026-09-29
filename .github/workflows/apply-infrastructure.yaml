@@ -1,0 +1,15 @@
+name: Apply Infrastructure
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy-github-config:
+    uses: kad-products/platform/.github/workflows/apply-open-tofu.yaml@main
+    with:
+      app-name: ${{github.event.repository.name}}
+      state-type: github
+      state-name: setup
+      working-directory: infra/github
+    secrets: inherit
