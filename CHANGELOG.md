@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/kad-products/tmplt-rwsdk/compare/v1.1.1...v1.1.2) (2026-10-08)
+
+### Bug Fixes
+
+* missed a husky change ([226a269](https://github.com/kad-products/tmplt-rwsdk/commit/226a269a219ff6679dc7ef8d5e81aea0b74af6c7))
+* pull in latest standards to template ([53dc880](https://github.com/kad-products/tmplt-rwsdk/commit/53dc8806fd8aadb8e52de87e646bf438f80056ed))
+
 ## [1.1.1](https://github.com/kad-products/tmplt-rwsdk/compare/v1.1.0...v1.1.1) (2026-09-29)
 
 ### Bug Fixes
