@@ -9,5 +9,5 @@ terraform {
 
 provider "github" {
   owner = "kad-products"
-  token = var.kad_workflow_automation
+  token = var.kad_github_token
 }
