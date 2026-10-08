@@ -1,14 +1,14 @@
 module "repo" {
-  source = "github.com/kad-products/platform//open-tofu/modules/github-repo?ref=v1.9.0"
+  source = "github.com/kad-products/platform//open-tofu/modules/github-repo?ref=v1.17.0"
 
   repo_name        = var.repo_name
   repo_description = "RedwoodSDK Template repo"
   is_product       = true
   required_checks = [
-    "plan-github-setup / Plan",
+    "test-cli / run-tests",
+    "lint-cli / lint-code",
     "lint-code / lint-code",
-    "run-tests / run-tests",
+    "plan-github-setup / plan-open-tofu",
     "create-release-dry-run / create-release-dry-run",
-    "lint-commits / lint-commits",
   ]
 }

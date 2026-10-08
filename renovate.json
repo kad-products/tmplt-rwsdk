@@ -1,0 +1,3 @@
+{
+	"extends": ["github>kad-products/platform//renovate/default.jsonc"]
+}

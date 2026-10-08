@@ -1,0 +1,14 @@
+name: Upgrade Dependencies
+
+on:
+  schedule:
+    # Weekly on Friday at 02:00 UTC
+    - cron: '0 2 * * 5'
+  push:
+    branches:
+      - main
+
+jobs:
+  upgrade-dependencies:
+    uses: kad-products/platform/.github/workflows/upgrade-dependencies.yaml@main
+    secrets: inherit
