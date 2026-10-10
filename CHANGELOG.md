@@ -1,3 +1,13 @@
+## [1.2.0](https://github.com/kad-products/tmplt-rwsdk/compare/v1.1.2...v1.2.0) (2026-10-10)
+
+### Features
+
+* make this repo a template in code ([6ce243d](https://github.com/kad-products/tmplt-rwsdk/commit/6ce243d9159936f1976cdad727291ea5868136bd))
+
+### Bug Fixes
+
+* use latest repo module version ([a168c91](https://github.com/kad-products/tmplt-rwsdk/commit/a168c91222a067c48bda9fd03cc7731a6df97f2f))
+
 ## [1.1.2](https://github.com/kad-products/tmplt-rwsdk/compare/v1.1.1...v1.1.2) (2026-10-08)
 
 ### Bug Fixes
