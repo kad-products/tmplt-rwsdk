@@ -4,6 +4,7 @@ module "repo" {
   repo_name        = var.repo_name
   repo_description = "RedwoodSDK Template repo"
   is_product       = true
+  is_template      = true
   required_checks = [
     "test-cli / run-tests",
     "lint-cli / lint-code",
