@@ -16,6 +16,7 @@ jobs:
       tag: ${{ github.ref }}
     permissions:
       contents: write
+      packages: read
     secrets: inherit
     # disabled here in the template repo, remove in the real repo
     if: false 
