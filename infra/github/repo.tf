@@ -1,5 +1,5 @@
 module "repo" {
-  source = "github.com/kad-products/platform//open-tofu/modules/github-repo?ref=v1.17.0"
+  source = "github.com/kad-products/platform//open-tofu/modules/github-repo?ref=v1.21.0"
 
   repo_name        = var.repo_name
   repo_description = "RedwoodSDK Template repo"
